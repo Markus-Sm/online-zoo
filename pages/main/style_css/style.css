@@ -907,6 +907,12 @@ p {
 	}
 }
 
+@media (min-width: 1700px){
+	.figma__link{
+		right: 30rem;
+	}
+}
+
 // ======================================
 // =======MEDIA-HEIGHT===================
 // ======================================
@@ -982,7 +988,7 @@ p {
 		width: 26rem;
 	}
 	.plant-img {
-		width: 38rem;
+		width: 39rem;
 	}
 
 	.section-wrapper2{
@@ -997,11 +1003,28 @@ p {
 	.footer {
 		height: 48vh;
 	}
+
+	.palm-img {
+		width: 26rem;
+	}
+	.plant-img {
+		width: 43rem;
+	}
 }
 
 @media (min-height: 1100px) {
 	.arrow {
 		top: 48rem;
+	}
+
+	.footer {
+		height: 40vh;
+	}
+}
+
+@media (min-height: 1250px){
+	.footer {
+		height: 36vh;
 	}
 }
 
