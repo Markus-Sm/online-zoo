@@ -194,8 +194,8 @@ END OF STYLEING INPUT RANGE
 /*Styleing inout email and submit input*/
 
 input[type='email']{
-	width: 25rem;
-	height: 4rem;
+	width: 228px;
+	height: 42px;
 	outline: 0;
 	background: transparent;
 	border: none;
@@ -204,6 +204,7 @@ input[type='email']{
 	border-radius: 5px;
 	margin-right: 1rem ;
 	color: #cecece;
+	font-size: 16px;
 }
 
 input[type='email']::placeholder{
@@ -211,8 +212,8 @@ input[type='email']::placeholder{
 }
 
 input[type='submit']{
-	width: 12rem;
-	height: 4rem;
+	width: 129px;
+	height: 42px;
 	padding: 0;
 	bottom: 0;
 	border: 1px solid greenyellow;
