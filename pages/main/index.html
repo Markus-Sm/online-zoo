@@ -17,38 +17,45 @@
 <body>
 
     <header class="header">
-        <nav class="main-nav">
-            <ul class="nav__links">
-                <li class="li-list"><a href="../main/index.html" class="li-list-a"><img class="logo"
-                            src="../../assets/icons/logo_footer.png" alt="logo"></a></li>
-                <li class="li-list"><a href="../main/index.html" class="li-list-a active">About</a></li>
-                <li class="li-list"><a href="../Map/index.html" class="li-list-a">Map</a></li>
-                <li class="li-list"><a href="../Zoos/index.html" class="li-list-a">Zoos</a></li>
-                <li class="li-list"><a href="../donate/index.html" class="li-list-a">Donate</a></li>
-                <li class="li-list"><a href="../Contact-us/index.html" class="li-list-a">Contact us</a></li>
-            </ul>
-            <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" class="figma__link"
-                target="_blank">Designet by &copy;</a>
-        </nav>
-
-        <div class="watch__block">
-            <div class="watch__block-shadow"></div>
-
-            <div class="watch__header">
-                <h1 class="watch__header-text">Watch your <span>favorite</span> animal online</h1>
+        <div class="wrapper header__wrapper">
+            <a class="logo header__logo" href="./index.html">
+                <img class="logo" src="../../assets/icons/logo_footer.png" alt="logo">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__menu header__menu">
+                    <li class="nav__li nav__about"><a href="#" class="nav__li nav__about">About</a></li>
+                    <li class="nav__li nav__map">Map</li>
+                    <li class="nav__li nav__zoos">Zoos</li>
+                    <li class="nav__li"><a href="../donate" class="nav__li nav__donate">Donate</a></li>
+                    <li class="nav__li nav__contact-us">Contact us</li>
+                    <li class="nav__li design nav__design">
+                        <p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank" class="design__title">Designed by ©</a></p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="design">
+                <p class="design__title"><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" target="_blank" class="design__title">Designed by ©</a></p>
             </div>
-
-            <button class="btn__watch-online"><a href="https://www.youtube.com/watch?v=XLwYWCzlfIw" target="_blank">
-                    <p>Watch online</p>
-                </a></button>
+            <div class="header__burger"></div>
+            <div class="overlay"></div>
         </div>
     </header>
 
     <main class="main">
 
+        <section class="watch">
+            <div class="wrapper watch__wrapper">
+                <div class="watch__circle"></div>
+                <div class="watch__title">
+                    <p>Watch your <span class="watch__title_color">favorite</span> animal online</p>
+                </div>
+                <button class="btn watch__btn">WATCH ONLINE</button>
+            </div>
+        </section>
+
         <section class="backstage">
 
-            <div class="section-wrapper1">
+            <div class="wrapper backstage__wrapper">
                 <div class="backstage-left">
                     <img src="../../assets/images/bambo.jpg" alt="img of Bambo" class="bambo-img">
                 </div>
@@ -62,9 +69,11 @@
                         near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more
                         than 1,500 mammals and reptiles.</p>
                 </div>
+
+                <div class="img-plant"><img src="../../assets/images/flower_foto.png" alt="img plant"></div>
             </div>
 
-            <div class="img-plant"><img src="../../assets/images/flower_foto.png" alt="img plant"></div>
+
 
         </section>
 
@@ -73,7 +82,7 @@
             <a class="arrow right"><img src="../../assets/images/arrow-right.png" alt="arrow"></a>
             <a class="arrow left"><img src="../../assets/images/arrow-left.png" alt="arrow"></a>
 
-            <div class="section-wrapper2">
+            <div class="wrapper pets__wrapper">
 
 
                 <div class="square-cards">
@@ -307,8 +316,7 @@
                 <input type="range" class="styled-slider slider-progress">
 
 
-                <a class="orange__btn_shared orange__btn-6">
-                    <p>Leave feedback</p>
+                <a class="orange__btn_shared orange__btn-6">Leave feedback
                 </a>
             </div>
             <img src="../../assets/images/4.png" alt="img of leav" class="leav">
@@ -318,7 +326,7 @@
 
 
     <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper wrapper">
 
             <div class="footer__left">
                 <a href="../main/index.html"><img src="../../assets/icons/logo_footer.png"  alt="img of logo" class="logo__footer"></a>
@@ -348,7 +356,7 @@
             <div class="footer__middle">
                 <nav class="footer_nav">
                     <ul class="footer_navs">
-                        <li class="li-list_footer"><a href="../main/index.html" class="li-list-a active footer_nav-a">About</a></li>
+                        <li class="li-list_footer"><a href="../main/index.html" class="li-list-a footer_nav-a active">About</a></li>
                         <li class="li-list_footer"><a href="../Map/index.html" class="li-list-a footer_nav-a">Map</a></li>
                         <li class="li-list_footer"><a href="../Zoos/index.html" class="li-list-a footer_nav-a">Zoos</a></li>
 
