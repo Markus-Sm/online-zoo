@@ -408,7 +408,7 @@ body {
 	position: absolute;
 	width: 62px;
     height: 62px;
-	top: 36.2%;
+	top: 39%;
 	background: linear-gradient(to top left, #f9804b, #fe9013);
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
@@ -434,12 +434,12 @@ body {
 .right {
 	// right: 16rem;
 	border-radius: 50%;
-    right: 7%;
+    right: -7%;
 }
 .left {
 	// left: 18rem;
 	border-radius: 50%;
-	left: 7%;
+	left: -7%;
 }
 
 .orange__btn {
@@ -693,6 +693,7 @@ body {
 
 .header__right {
 	width: 14rem;
+	margin-left: 1rem;
 }
 
 .header-6 {
