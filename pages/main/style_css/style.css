@@ -759,7 +759,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 43px 0;
+	padding: 43px 0 48px;
 }
 
 .footer__wrapper {
@@ -831,14 +831,13 @@ body {
 .footer_navs {
 	display: flex;
 	position: absolute;
-	justify-content: space-between;
+	justify-content: space-around;
 	bottom: 0;
 	width: 40rem;
 }
 
 .li-list_footer {
 	font-size: 2.4rem;
-	margin-left: 2.5rem;
 }
 
 
