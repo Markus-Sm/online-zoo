@@ -22,6 +22,19 @@ body {
 }
 /* HEADER */
 
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	bottom: 0;
+	padding: 0;
+	word-spacing: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /* Header */
 .header {
     position: relative;
@@ -103,14 +116,6 @@ body {
 .nav__li:hover {
     cursor: pointer;
     color: #F9804B;
-}
-
-.nav__about {
-    color: #F9804B;
-}
-
-.nav__about:hover {
-    transform: none;
 }
 
 .design__title:hover {
@@ -431,6 +436,9 @@ body {
 .arrow:hover {
 	background: linear-gradient(to top left, #fd8803, #fe9013);
 }
+.arrow:active{
+	background: linear-gradient(to top left, #fd88038a, #ea800896);
+}
 .right {
 	// right: 16rem;
 	border-radius: 50%;
@@ -463,6 +471,10 @@ body {
 .orange__btn:hover {
 	color: rgba(255, 238, 46, 1);
 	font-size: 17px;
+}
+
+.orange__btn:active{
+	background: linear-gradient(to top left, #fd88038a, #ea800896);
 }
 
 .palm-img {
@@ -615,6 +627,9 @@ body {
 	color: rgba(255, 238, 46, 1);
 	font-size: 17px;;
 }
+.orange__btn-3:active{
+	background: linear-gradient(to top left, #fd88038a, #ea800896);
+}
 
 .arrow_ {
 	position: absolute;
@@ -742,6 +757,9 @@ body {
 	cursor: pointer;
 	font-size: 17px;
 }
+.orange__btn_shared:active{
+	background: linear-gradient(to top left, #fd88038a, #ea800896);
+}
 
 .leav {
 	position: absolute;
@@ -785,6 +803,10 @@ body {
 	margin-bottom: 5rem;
 	width: 298px;
 	height: 54px;
+}
+
+.orange-btn__footer:active{
+	background: linear-gradient(to top left, #fd88038a, #ea800896);
 }
 
 .social_wraper {
@@ -838,6 +860,7 @@ body {
 
 .li-list_footer {
 	font-size: 2.4rem;
+	text-align: center;
 }
 
 
@@ -925,45 +948,5 @@ body {
 	}
 }
 
-@media (min-width: 1700px){
-	.figma__link{
-		right: 30rem;
-	}
-}
-
-// ======================================
-// =======MEDIA-HEIGHT===================
-// ======================================
 
 
-
-@media (min-height: 800px) {
-
-	.palm-img {
-		width: 26rem;
-	}
-	.plant-img {
-		width: 37rem;
-	}
-}
-
-
-@media (min-height: 900px) {
-
-	.palm-img {
-		width: 26rem;
-	}
-	.plant-img {
-		width: 39rem;
-	}
-600
-}
-@media (min-height: 1000px) {
-
-	.palm-img {
-		width: 26rem;
-	}
-	.plant-img {
-		width: 43rem;
-	}
-}
