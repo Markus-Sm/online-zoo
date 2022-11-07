@@ -173,6 +173,9 @@ body {
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title__description{
@@ -207,6 +210,7 @@ body {
     font-weight: 500;
     text-align: center;
     margin-top: 155px;
+    color: #000000;
 }
 
 .panda__diet p{
@@ -223,4 +227,232 @@ body {
 .panda__img{
     margin-left: 61px;
     margin-top: 60px;
+    margin-right: 229px;
+    height: 246px;
+    width: 284px;
+}
+
+// ===FORM====
+
+.pay__bar{
+    display: flex;
+    margin-top: 87p;
+    width: 100%;
+}
+
+.pay-bar__scale{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pay-bar__scale:last-child{
+    margin-right: 20px;
+}
+
+.pay__bar__title{
+    color: #000;
+    margin-bottom: 17px;
+    margin-top: 48.53px;
+}
+
+.pay__bar__bcg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 915px;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.line__bcg{
+    width: 850px;
+    height: 2px;
+    background: #72828E;
+    z-index: 1;
+    margin-bottom: 2px;
+}
+
+.pay__bar-input:checked,
+.pay__bar-input:not(:checked){
+    display: none;
+}
+
+.pay__bar-input:checked+label,
+.pay__bar-input:not(:checked)+label{
+    display: inline-block;
+    position: relative;
+    color: #333B41;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 140%;
+    width: 65%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.pay__bar-input:checked+label:before,
+.pay__bar-input:not(:checked)+label:before{
+    content: "";
+    position: absolute;
+    left: 27px;
+    bottom: 59px;
+    width: 10px;
+    height: 10px;
+    background: #ffee2e;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pay__bar-input:checked+label:hover:before,
+.pay__bar-input:not(:checked)+label:hover:before{
+    background: #E47209;
+}
+
+.pay__bar-input:checked+label:after,
+.pay__bar-input:not(:checked)+label:after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: -47px;
+    width: 40px;
+    height: 40px;
+    background: url('../../../assets/icons/roller_icon.png');
+    transition: all .4s ease-in-out;
+}
+
+.pay__bar-input:not(:checked)+label:after{
+    opacity: 0;
+}
+
+.pay__bar-input:checked+label,
+.pay__bar-input:checked+label:hover,
+.pay__bar-input:not(:checked)+label:hover{
+    color: #FE9013;
+}
+
+/* amount */
+
+.donate__amount{
+    position: relative;
+    margin: 0 auto 26px;
+    display: block;
+}
+
+.donate__input{
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 9px;
+    display: flex;
+    width: 268px;
+    height: 52px;
+    background: url('../../../assets/icons/dolar.png');
+    background-repeat: no-repeat;
+    background-position: center right+10px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+}
+
+.donate__input[type="number"]::placeholder{
+    color: #929699;
+}
+
+.donate__input:focus{
+    background: url('../../../assets/icons/dollar_active.svg');
+    background-repeat: no-repeat;
+    background-position: center right+10px;
+    border: 1px solid #0faa07;
+    color: #0faa07;
+}
+
+.donate__input:focus {
+    outline: #4B9200;
+}
+
+.donate__input::-webkit-outer-spin-button,
+.donate__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.donate__input {
+    -moz-appearance:textfield ;
+}
+
+/* == Pay - OPTIONS == */
+
+.pay-options{
+    gap: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.donate__options {
+    margin: 27px 35px 34px 0;
+}
+
+.pay__option-radio{
+    display: none;
+}
+
+.pay__option-radio:checked+.pay__options-label::after{
+    transform: scale(1);
+}
+
+.pay__options-label{
+    display: inline-flex;
+    position: relative;
+    font-size: 16px;
+}
+
+.pay__options-label::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+}
+
+.pay__options-label::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 16px;
+    height: 16px;
+    background: #4B9200;
+    border: 1px solid #4b9200;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.shared-btn{
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    width: 298px;
+    height: 54px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.shared-btn:hover{
+    background: #E47209;
+}
+.shared-btn:active{
+    background: #4B9200;
+}
+
+.feed__end-p{
+    margin-top: 30px;
+    font-size: 16px;
 }

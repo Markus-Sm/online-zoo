@@ -19,11 +19,10 @@
 
     <header class="header">
         <div class="wrapper header__wrapper">
-            <h1>
+                <h1 class="visually-hidden">PetStory Online</h1>
                 <a class="logo header__logo" href="../main/index.html">
                 <img class="logo" src="../../assets/icons/logo_footer.png" alt="logo">
                 </a>
-            </h1>
             <nav class="nav header__nav">
                 <ul class="nav__menu header__menu">
                     <li class="nav__li"><a href="../main/index.html" class="nav__li">About</a></li>
@@ -70,6 +69,78 @@
 
                         <img src="../../assets/images/panda-donate.png" class="panda__img" alt="image of panda">
                     </div>
+
+                    <form class="donate__form">
+                        <div class="pay__bar">
+                            <p class="pay__bar__title">Amount</p>
+                            <div class="pay__bar__bcg">
+                                <div class="line__bcg"></div>
+                            </div>
+                            
+                            <div class="pay-bar__scale">
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="5000" name="amount" value="5000">
+                                    <label for="5000" class="pay__bar-label" for="5000">$5000</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="2000" name="amount" value="2000">
+                                    <label for="2000" class="pay__bar-label" for="2000">$2000</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="1000" name="amount" value="1000">
+                                    <label for="1000" class="pay__bar-label" for="1000">$1000</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="500" name="amount" value="500">
+                                    <label for="500" class="pay__bar-label" for="500">$500</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="250" name="amount" value="250">
+                                    <label for="250" class="pay__bar-label" for="5000">$250</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="100" name="amount" value="100">
+                                    <label for="100" class="pay__bar-label" for="100">$100</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="50" name="amount" value="50">
+                                    <label for="50" class="pay__bar-label" for="50">$50</label>
+                                </div>
+
+                                <div class="pay__amount-btn">
+                                    <input class="pay__bar-input" type="radio" id="25" name="amount" value="25">
+                                    <label for="25" class="pay__bar-label" for="25">$25</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <label class="amount donate__amount">
+                            <input type="number" class="donate__input" id="another__amount" placeholder="Another amount" min="0" max="9999">
+                        </label>
+
+                        <div class="pay-options donate__options">
+                            <div class="pay-options__item">
+                                <input type="radio" class="pay__option-radio" id="monthly" name="pay-option">
+                                <label class="pay__options-label" for="monthly">Monthly</label>
+                            </div>
+
+                            <div class="pay-options__item">
+                                <input type="radio" class="pay__option-radio" id="once" name="pay-option" checked>
+                                <label class="pay__options-label" for="once">Once</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button class="shared-btn feed_btn">Feed a friend now</button>
+                    <div class="feed__end-p">Share with your friends on social networks</div>
+
 
                 </div>
 
