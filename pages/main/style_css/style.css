@@ -212,7 +212,7 @@ body {
 
 /*============MEDIA header=================*/
 
-@media (max-width: 1599px) {
+@media (max-width: 1440px) {
 
 	.wrapper{
 		width: 940px;
@@ -313,7 +313,18 @@ body {
 
 /*=========MEDIA BACKSTAGE============*/
 
-@media (max-width: 1599px) {
+@media (min-width: 1440px){
+	.img-plant img{
+		width: 180px;
+	}
+}
+@media (min-width: 1599px){
+	.img-plant img{
+		width: 220px;
+	}
+}
+
+@media (max-width: 1440px) {
 
 	.backstage__wrapper{
 		height: 669px;
@@ -573,7 +584,26 @@ body {
 
 /*========MEDIA PETS=================*/
 
-@media (max-width: 1599px) {
+@media (min-width: 1440px) {
+	.plant-img{
+		width: 30rem;
+	}
+
+	.palm-img{
+		width: 20rem;
+	}	
+}
+@media (min-width: 1599px) {
+	.plant-img{
+		width: 35rem;
+	}
+
+	.palm-img{
+		width: 28rem;
+	}	
+}
+
+@media (max-width: 1440px) {
 
 	.pets__wrapper{
 		height: 1060px;
@@ -779,7 +809,7 @@ body {
 /*============MEDIA=================*/
 /*====MEDIA PICK AND FEED FRIEND*/
 
-@media (max-width: 1599px) {
+@media (max-width: 1440px) {
 
 	.feed{
 		height: 876px;
@@ -1112,7 +1142,7 @@ body {
 /*============WIDTH=================*/
 /*============MEDIA=================*/
 
-@media (max-width: 1599px) {
+@media (max-width: 1440px) {
 
 	.testimonials{
 		height: 842px;
