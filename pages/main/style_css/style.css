@@ -976,6 +976,34 @@ body {
 	bottom: 0rem;
 	right: 0rem;
 }
+
+/*========MEDIA Testemonials=================*/
+
+@media (max-width: 1440px) {
+
+	.testimonials{
+		height: 842px;
+		margin-top: 0;
+	}
+
+	.testimonials__wrap{
+		width: 940px;
+		justify-content: space-between;
+	}
+	
+	.square__testimonials:first-child{
+		display: none;
+	}
+
+	.square__testimonials{
+		width: 293px;
+		height: 391px;
+	}
+
+	.testimonials__header-6{
+		margin-top: 10rem;
+	}
+}
 /*END OF SECTION 6 TESTIMONIALS*/
 
 /*FOOTER*/
@@ -1144,29 +1172,13 @@ body {
 
 @media (max-width: 1440px) {
 
-	.testimonials{
-		height: 842px;
-		margin-top: 0;
+	.form{
+		display: flex;
 	}
 
-	.testimonials__wrap{
-		width: 940px;
+	.footer_navs{
+		width: 332px;
 		justify-content: space-between;
-	}
-	
-	.square__testimonials:first-child{
-		display: none;
-	}
-
-	.square__testimonials{
-		width: 293px;
-		height: 391px;
-	}
-
-	.first{
-		
-	}
-	.last{
 		
 	}
 }
