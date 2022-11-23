@@ -25,96 +25,12 @@ body {
 
 /* HEADER */
 
-/* Header */
-.header {
-    position: relative;
-    background-color: #000000;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    z-index: 1;
-}
 
-.header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@media (max-width: 1440px) {
 
-.logo {
-    position: relative;
-    display: flex;	
-    border: 1.18841px solid #FFFFFF;
-    font-weight: 400;
-	color: #FFFFFF;
-    font-size: 19.0145px;
-    line-height: 120%;
-    height: 50px;
-    width: 80px;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.logo__title {
-    font-weight: 400;
-    font-size: 19.0145px;
-    line-height: 120%;
-}
-
-.logo__img {
-    position: absolute;
-    left: 11px;
-    top: 23px;
-}
-
-.logo__img-2 {
-    display: none;
-}
-
-.nav {
-    flex-grow: 1;
-}
-
-.nav__logo, .nav__design {
-    display: none;
-}
-
-.overlay {
-    display: none;
-}
-
-.nav__menu {
-    display: flex;
-    align-self: center;
-    gap: 6.4%;
-    margin-left: 63px;
-    padding: 0;
-}
-
-.nav__contact-us {
-    white-space: nowrap;
-}
-
-.nav__li, .design__title{
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav__li:hover {
-    cursor: pointer;
-    color: #F9804B;
-}
-
-.design__title:hover {
-    cursor: pointer;
-    color: #F9804B;
-}
-
-.active{
-	color:rgba(254, 144, 19, 1);
+	.wrapper{
+		width: 940px;
+	}
 }
 
 /*End OF HEADER*/
@@ -130,6 +46,14 @@ body {
     top: 76px;
 }
 
+/* MEDIA TOP */
+
+@media (max-width: 1440px) {
+    .top{
+        background-size: 160%;
+        background-position-x: 31% ;
+    }
+}
 
 /*PICK AND FEED A FRIEND*/
 
@@ -206,20 +130,17 @@ body {
     margin-left: 215px;
 }
 
+.panda__diet p{
+    margin-top: 11px;
+    text-align: center;
+}
+
 .big__4{
     font-size: 72px;
     line-height: 80%;
     font-weight: 500;
     text-align: center;
     margin-top: 155px;
-    color: #000000;
-}
-
-.panda__diet p{
-    margin-top: 11px;
-    // line-height: 140%;
-    text-align: center;
-    color: #333B41;
 }
 
 .x__icon{
@@ -238,7 +159,6 @@ body {
 
 .pay__bar{
     display: flex;
-    margin-top: 87p;
     width: 100%;
 }
 
@@ -457,4 +377,40 @@ body {
 .feed__end-p{
     margin-top: 30px;
     font-size: 16px;
+}
+
+@media (max-width: 1440px) {
+    
+    .pick__feed__friend{
+        height: 1333px;
+    }
+
+    .wrapper__donate{
+        height: 918px;
+        padding: 20px 45px 62px 45px;
+    }
+
+    .text__description{
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .panda__img{
+        margin-right: 160px;
+    }
+
+    .panda__diet{
+        margin-left: 140px;
+    }
+
+    .pay__bar__bcg{
+        width: 100%;
+    }
+
+    .shared-btn{
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
