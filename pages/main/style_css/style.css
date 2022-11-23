@@ -246,6 +246,108 @@ body {
 	}
 }
 
+@media (max-width: 980px){
+	.header{
+		display: none;
+	}
+
+	.wrapper{
+		width: 600px;
+	}
+
+	.mobile__header{
+		width: 100%;
+		position: fixed;
+		top: 0;
+		height: 34px;
+		background-color: #111115;
+		z-index: 200;
+	}
+
+	.mobile__nav{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.mobile__nav-logo{
+		width: 46px;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.burger__wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		width: 18px;
+	}
+
+	.burger__line{
+		height: 2px;
+		width: 18px;
+		margin-top: 2px;
+		background-color: #fff;
+	}
+
+	.header__title-mobile{
+		line-height: 15px;
+		font-size: 12px;
+		font-weight: 400;
+		margin-top: .2rem;
+		color: #fff;
+	}
+
+	.header__title-mobile span{
+		margin-left: .6rem;
+	}
+
+	.bamboo-stick{
+		position: absolute;
+		top: 1.5rem;
+		left: .3rem;
+		width: .5em;
+	}
+}
+
+@media (max-width: 980px){
+	.wrapper{
+		width: 600px;
+	}
+
+	.watch{
+		height: 535px;
+		background: url('../../../assets/images/bcg.Giant-Panda.png') no-repeat center/cover;
+		background-size: 100%;
+	}
+
+	.watch__circle{
+		width: 237.6px;
+		height: 237.6px;
+		left: calc(50% - 237.6px/2 + 130.44px);
+		top: 13rem;
+	}
+
+	.watch__title{
+		line-height: 40px;
+		font-size: 54.42px;
+		width: 255.64px;
+		top: 17rem;
+		left: 34.8rem;
+	}
+
+	.watch__btn{
+		left: 0%;
+		top: 66%;
+		font-weight: 500;
+	}
+
+}
+
+
 /* SECTION 1 BACKSTAGE*/
 
 .backstage {
@@ -1183,5 +1285,9 @@ body {
 	}
 }
 
+@media (max-width: 980px){
+	
+
+}
 
 
