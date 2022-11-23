@@ -36,6 +36,10 @@ body {
 }
 
 /* Header */
+.mobile__header{
+	display: none;
+}
+
 .header {
     position: relative;
     background-color: #000000;
@@ -256,6 +260,7 @@ body {
 	}
 
 	.mobile__header{
+		display: block;
 		width: 100%;
 		position: fixed;
 		top: 0;
