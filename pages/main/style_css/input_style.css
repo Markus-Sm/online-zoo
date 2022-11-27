@@ -15,6 +15,12 @@ input[type='range'].styled-slider {
 	}
 }
 
+@media (max-width: 980px){
+	input[type='range'].styled-slider {
+		display: none;
+	}
+}
+
 /*progress support*/
 input[type='range'].styled-slider.slider-progress {
 	--range: calc(var(--max) - var(--min));
