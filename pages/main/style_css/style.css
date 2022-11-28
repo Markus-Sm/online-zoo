@@ -63,6 +63,15 @@ body {
 #alligators{
 	display: none;
 }
+.mobile-small__header{
+	display: none;
+}
+.arrow_vertical{
+	display: none;
+}
+.leav_rotate{
+	display: none;
+}
 
 .header {
 	position: relative;
@@ -383,6 +392,8 @@ body {
 
 	.watch {
 		height: 340px;
+		width: 100%;
+		// width: 639px;
 		margin-bottom: -5.5rem;
 	}
 
@@ -403,10 +414,11 @@ body {
 		width: 128.13px;
 		top: 13.1rem;
 		left: 17rem;
-	}
+	}	
 
 	.mobile__header{
-		position: relative;
+		
+		width: 100%;
 	}
 }
 
@@ -989,6 +1001,77 @@ body {
 	}
 }
 
+@media (max-width: 639px){
+
+	.wrapper{
+		width: 300px;
+	}
+
+	.square-cards{
+		flex-direction: column;
+	}
+
+	.arrow{
+		display: none;
+	}
+
+	.pets__wrapper{
+		height: 1600px;
+	}
+
+	.square-cards:first-child{
+		margin-bottom: 0;
+	}
+	.square-cards:nth-child(2){
+		display: none;
+	}
+
+	.pet__card:first-child{
+		display: block;
+	}
+
+	#alligators{
+		display: block;
+	}
+
+	.alligators-img{
+		max-height: 28rem;
+	}
+
+	.info__text p{
+		font-size: 12px;
+	}
+	.info__text_under p{
+		font-size: 12px;
+	}
+
+	.pet__header{
+		font-size: 16px;
+	}
+
+	.orange__btn__pets{
+		margin-top: 1rem;
+		margin-bottom: 6rem;
+		font-weight: 500;
+	}
+
+	.palm-img{
+		display: none;
+	}
+
+	.palm-img1000{
+		display: block;
+		height: 72px;
+		width: 6rem;
+	}
+
+	.plant-img{
+		height: 71px;
+		width: 85px;
+	}
+}
+
+
 /* END OF PET SECTION 2*/
 
 /*SECTION FEED*/
@@ -1287,6 +1370,78 @@ body {
 		left: 16rem;
 	}
 }
+
+@media (max-width: 639px){
+	.feed{
+		height: 1082px;
+	}
+	.section-wrapper-3{
+		height: 1042px;
+	}
+
+	.mini_wrapper{
+		width: 300px;
+	}
+	.section-wrapper-3{
+		width: 300px;
+		padding: 1rem;
+	}
+
+	.feed__header{
+		font-size: 24px;
+		margin-top: -2rem;
+	}
+	.feed__header-3 p{
+		font-size: 18px;
+		width: 297px;
+		text-align: center;
+	}
+
+	.feed__paragraph-1{
+		display: none;
+	}
+	.feed__paragraph-2{
+		display: none;
+	}
+
+	.header-03{
+		margin-bottom: 2rem;
+		font-size: 24px;
+	}
+
+	.feed__info{
+		flex-direction: column;
+	}
+
+	.arrow_mini{
+		display: none;
+	}
+
+	.square__feed{
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.square__feed p{
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.arrow_vertical{
+		display: block;
+		width: 2rem;
+		position: absolute;
+	}
+
+	._x{
+		top: 16rem;
+		left: 19.6rem;
+	}
+	._y{
+		top: 39rem;
+		left: 19.6rem;
+	}
+}
 /*SECTION END OF FEED*/
 
 /*SECTION 6 TESTIMONIALS*/
@@ -1485,6 +1640,52 @@ body {
 	.orange__btn-6{
 		margin-left: 15rem;
 		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 639px){
+	.testimonials {
+		height: 580px;
+	}
+
+	.testimonials__header-6{
+		font-size: 24px;
+		margin-top: 7rem;
+		margin-bottom: .6rem;
+	}
+
+	.square__testimonials{
+		width: 299px;
+		margin-top: 0;
+		margin-bottom: 15px;		
+	}
+
+	.orange__btn-6{
+		margin-left: 30px;
+		width: 240px;
+		height: 54px;
+		margin-top: 3rem;
+	}
+
+	.leav{
+		display: none;		
+	}
+	.leav_rotate{
+		display: block;
+		position: absolute;
+		bottom: -3rem;
+		right: 0;
+	}
+
+	.square__testimonials:first-child {
+		display: block;
+	}
+	.last{
+		display: none;
+	}
+	.square__testimonials:nth-child(3){
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 }
 
@@ -1721,7 +1922,7 @@ body {
 		justify-content: space-around;
 	}
 }
-
+/* media backstage */
 @media (max-width: 639px){
 	.wrapper {
 		width: 300px;
@@ -1776,51 +1977,27 @@ body {
 	}
 }
 
-@media (max-width: 639px){
-
-	.wrapper{
-		width: 300px;
-	}
-
-	.square-cards{
-		flex-direction: column;
-	}
-
-	.arrow{
-		display: none;
-	}
-
-	.pets__wrapper{
-		height: 1721px;
-	}
-
-	.square-cards:first-child{
-		margin-bottom: 0;
-	}
-	.square-cards:nth-child(2){
-		display: none;
-	}
-
-	.pet__card:first-child{
-		display: block;
-	}
-
-	#alligators{
-		display: block;
-	}
-
-	.alligators-img{
-		max-height: 28rem;
-	}
-
-	.info__text p{
-		font-size: 12px;
-	}
-	.info__text_under p{
-		font-size: 12px;
-	}
-
-	.pet__header{
-		font-size: 16px;
+@media (min-width: 350px){
+	.watch__btn-mobile{
+		margin-top: 30px;
 	}
 }
+
+@media (min-width: 475px){
+	.watch__btn-mobile{
+		display: none;
+	}
+
+	.backstage-right{
+		margin-top: 10rem;
+	}
+}
+
+@media (min-width: 639px){
+	.backstage-right{
+		margin-top: 0rem;
+	}
+}
+
+/* MEDIA FEED SECTION */
+
