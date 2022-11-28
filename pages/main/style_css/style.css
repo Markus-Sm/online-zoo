@@ -382,8 +382,8 @@ body {
 	}
 
 	.watch {
-		height: 410px;
-		margin-bottom: -9rem;
+		height: 340px;
+		margin-bottom: -5.5rem;
 	}
 
 	.watch__btn{
@@ -394,15 +394,19 @@ body {
 		width: 119px;
 		height: 119px;
 		left: calc(50% - 257.6px / 2 + 130.44px);
-		top: 13rem;
+		top: 11rem;
 	}
 
 	.watch__title {
 		line-height: 20.41px;
 		font-size: 27.21px;
 		width: 128.13px;
-		top: 15rem;
+		top: 13.1rem;
 		left: 17rem;
+	}
+
+	.mobile__header{
+		position: relative;
 	}
 }
 
