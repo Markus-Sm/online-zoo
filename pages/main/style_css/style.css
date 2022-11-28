@@ -54,6 +54,15 @@ body {
 .mobile-pet__card-img{
 	display: none;
 }
+.plant_mobile{
+	display: none;
+}
+.watch__btn-mobile{
+	display: none;
+}
+#alligators{
+	display: none;
+}
 
 .header {
 	position: relative;
@@ -364,6 +373,36 @@ body {
 		left: 0%;
 		top: 66%;
 		font-weight: 500;
+	}
+}
+
+@media (max-width: 639px){
+	.wrapper {
+		width: 300px;
+	}
+
+	.watch {
+		height: 410px;
+		margin-bottom: -9rem;
+	}
+
+	.watch__btn{
+		display: none;
+	}
+
+	.watch__circle {
+		width: 119px;
+		height: 119px;
+		left: calc(50% - 257.6px / 2 + 130.44px);
+		top: 13rem;
+	}
+
+	.watch__title {
+		line-height: 20.41px;
+		font-size: 27.21px;
+		width: 128.13px;
+		top: 15rem;
+		left: 17rem;
 	}
 }
 
@@ -1676,5 +1715,108 @@ body {
 		left: -1.8rem;
 		bottom: -3rem;
 		justify-content: space-around;
+	}
+}
+
+@media (max-width: 639px){
+	.wrapper {
+		width: 300px;
+	}
+
+	.backstage__wrapper{
+		display: flex;
+		flex-direction: column;
+		height: 532px;
+	}
+
+	.plant{
+		display: none;
+	}
+
+	.backstage-header2{
+		font-size: 24px;
+		line-height: 28.8px;
+		width: 296px;
+	}
+
+	.watch__btn-mobile{
+		display: block;
+		width: 298px;
+		height: 54px;
+		border-radius: 25px;
+		background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+		color: #fff;
+		font-weight: 500;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		border:none;
+		transition: all .3s ease-in-out;
+		}
+
+	.backstage-right p{
+		width: 298px;
+	}
+
+	.plant_mobile{
+		display: block;
+		position: absolute;
+		right: 0;
+		width: 3.5rem;
+		top: 2rem;
+	}
+}
+@media (min-width: 500px){
+	.plant_mobile{
+		display: none;
+	}
+}
+
+@media (max-width: 639px){
+
+	.wrapper{
+		width: 300px;
+	}
+
+	.square-cards{
+		flex-direction: column;
+	}
+
+	.arrow{
+		display: none;
+	}
+
+	.pets__wrapper{
+		height: 1721px;
+	}
+
+	.square-cards:first-child{
+		margin-bottom: 0;
+	}
+	.square-cards:nth-child(2){
+		display: none;
+	}
+
+	.pet__card:first-child{
+		display: block;
+	}
+
+	#alligators{
+		display: block;
+	}
+
+	.alligators-img{
+		max-height: 28rem;
+	}
+
+	.info__text p{
+		font-size: 12px;
+	}
+	.info__text_under p{
+		font-size: 12px;
+	}
+
+	.pet__header{
+		font-size: 16px;
 	}
 }
