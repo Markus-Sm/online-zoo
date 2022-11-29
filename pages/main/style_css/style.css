@@ -394,7 +394,6 @@ body {
 	.watch {
 		height: 340px;
 		width: 100%;
-		// width: 639px;
 		margin-bottom: -5.5rem;
 	}
 
@@ -415,28 +414,12 @@ body {
 		width: 128.13px;
 		top: 13.1rem;
 		left: 17rem;
-	}	
-
-	.mobile__header{
-		width: 100%;
 	}
 
-	.mobile__wrapper{
-		position: relative;
-		max-width: 300px;
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
 	}
-	
-	.mobile__nav-logo{
-		position: absolute;
-		margin-left: -9rem;
-		margin-top: 1.5rem;
-	}
-
-	.burger{
-		position: absolute;
-		left: 18rem;
-	}
-
 }
 
 /* SECTION 1 BACKSTAGE*/
