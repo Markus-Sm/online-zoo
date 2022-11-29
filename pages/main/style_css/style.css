@@ -73,6 +73,9 @@ body {
 .leav_rotate{
 	display: none;
 }
+.footer__logo-mobile{
+	display: none;
+}
 
 .header {
 	position: relative;
@@ -1999,5 +2002,54 @@ body {
 	}
 }
 
-/* MEDIA FEED SECTION */
+/* MEDIA FOOTER SECTION */
+
+@media (max-width: 639px){
+	.logo__footer{
+		display: none;
+	}
+
+	.footer__logo-mobile{
+		display: block;
+		color: #fff;
+		width: 128px;
+		position: absolute;
+		top: -2rem;
+		left: 9rem;
+		font-size: 19.01px;
+	}
+	.bamboo-stick__mobile{
+		position: absolute;
+		left: 7.4rem;
+	}
+
+	.social_wraper{
+		flex-direction: row;
+		top: 0rem;
+		right: 4rem;
+	}
+
+	.social_link{
+		margin-left: 2rem;
+	}
+
+	.footer{
+		height: 324px;
+	}
+
+	.orange-btn__footer{
+		margin-top: 1.5rem;
+	}
+
+	.copy_right{
+		bottom: 2.5rem;
+		right: 0;
+	}
+	
+	.footer_navs{
+		width: 296px;
+		position: absolute;
+		left:0;
+	}
+}
 
