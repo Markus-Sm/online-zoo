@@ -415,9 +415,10 @@ body {
 		top: 13.1rem;
 		left: 17rem;
 	}
-	
-	.mobile__header{
-		position: absolute;
+
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
 	}
 }
 
