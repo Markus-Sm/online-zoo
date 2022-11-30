@@ -5,11 +5,7 @@ const closeModalWindow = document.querySelector('.close__modal__window')
 const burger = document.querySelector('.burger')
 
 const openModal = function(){
-    
-    
-    
     modalWindow.classList.remove('hidden')
-    
 }
 
 const closeModal = function(){
