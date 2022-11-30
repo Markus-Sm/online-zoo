@@ -77,6 +77,35 @@ body {
 	display: none;
 }
 
+/*========================*/
+/* MODAL WINDOW*/
+/*========================*/
+
+// .modal__window{
+// 	width: 100%;
+// 	position: absolute;
+// 	height: 329px;
+// 	background-color: #fff;
+// }
+
+// .logo__modal__window{
+// 	color: rgba(254, 144, 19, 1);
+// 	width: 58px;
+// 	height: 35.93px;
+// 	text-align: center;
+// 	border: 1px solid rgba(254, 144, 19, 1);
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	padding: 1rem;
+// }
+
+
+
+/*========================*/
+/* END OF MODAL WINDOW*/
+/*========================*/
+
 .header {
 	position: relative;
 	background-color: #000000;
