@@ -77,6 +77,89 @@ body {
 	display: none;
 }
 
+/*========================*/
+/* MODAL WINDOW*/
+/*========================*/
+
+.modal__window{
+	width: 100%;
+	position: absolute;
+	height: 329px;
+	background-color: #fff;
+	padding: 10px;
+	transition: all .4s ease-in-out;
+}
+
+.logo__modal__window{
+	color: rgba(254, 144, 19, 1);
+	width: 58px;
+	height: 35.93px;
+	text-align: center;
+	border: 1px solid rgba(254, 144, 19, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 3.2rem;
+}
+
+.logo__modal__window img{
+	position: absolute;
+	left: 1.8rem;
+	top: 3rem;
+}
+
+.li__nav__modal__window .active{
+	color: rgba(254, 144, 19, 1);
+}
+
+.nav__modal__window{
+	color: rgba(51, 59, 65, 1);
+	margin-top: 34.4px;
+}
+
+.li__nav__modal__window a{
+	color: rgba(51, 59, 65, 1);
+	transition: color .3s ease-in-out;
+}
+.li__nav__modal__window a:hover{
+	color: rgba(254, 144, 19, 1);
+}
+
+.li__nav__modal__window{
+	margin-top: 15px;
+	cursor: pointer;
+}
+.li__nav__modal__window:hover{
+	color: rgba(254, 144, 19, 1);
+}
+
+.close__modal__window{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+	top: 1rem;
+	right: 1rem;
+}
+
+.hidden{
+	opacity: 0;
+	transition: all .4s ease-in-out;
+}
+
+@media (max-width: 600px) {
+	.modal__window{
+		height: 320px;
+	}
+}
+
+/*========================*/
+/* END OF MODAL WINDOW*/
+/*========================*/
+
 .header {
 	position: relative;
 	background-color: #000000;
@@ -2043,7 +2126,7 @@ body {
 
 	.copy_right{
 		bottom: 2.5rem;
-		right: 0.5rem;
+		right: 0;
 	}
 	
 	.footer_navs{
