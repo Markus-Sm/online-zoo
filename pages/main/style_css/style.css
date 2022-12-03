@@ -1570,9 +1570,19 @@ body {
 	color: rgba(51, 59, 65, 1);
 }
 
+// .square__testimonials{
+// 	width: 100%;
+// 	max-height: 109px;
+// 	overflow: hidden;
+// 	overflow-y: scroll;
+// 	margin-top: 15px;
+// }
+
 .square__testimonials {
 	width: 26.4rem;
-	height: 38.7rem;
+	max-height: 391px;
+	overflow: hidden;
+	overflow-y: scroll;
 	padding: 1.5rem;
 	border-radius: 15px;
 	background-color: rgba(241, 243, 242, 1);
