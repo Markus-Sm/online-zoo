@@ -1,5 +1,7 @@
 'use strict';
 
+/* mobile navigation */
+
 const modalWindow = document.querySelector('.modal__window');
 const closeModalWindow = document.querySelector('.close__modal__window')
 const burger = document.querySelector('.burger')
@@ -15,7 +17,7 @@ const closeModal = function(){
 burger.addEventListener('click', openModal);
 closeModalWindow.addEventListener('click', closeModal)
 
-/* Testimonials */
+/* pets carousel */
 
 var sliderMain = document.getElementById('slider-main');
 var item = sliderMain.getElementsByClassName('pet__card');
@@ -39,3 +41,25 @@ function prev(){
 arrowLeft.addEventListener("click", prev)
 arrowRight.addEventListener("click", next)
 
+/* testimonials range slider */
+
+const sliderRange = document.querySelector('.slider-progress');
+
+const cards__wrapper = document.querySelector('.square__wrap_6');
+const cards__item = cards__wrapper.getElementsByClassName('square__testimonials')
+
+sliderRange.oninput = function(){
+    console.log(this.value);
+
+    if(this.value == 0){
+        cards__wrapper.append(cards__item[0]);
+    }else if(this.value == 1){
+        cards__wrapper.append(cards__item[0]);
+    }else if(this.value == 2){
+        cards__wrapper.append(cards__item[0]);
+    }else if(this.value == 3){
+        cards__wrapper.append(cards__item[0]);
+    }else if(this.value == 4){
+        cards__wrapper.append(cards__item[0]);
+    }
+}
