@@ -1572,7 +1572,9 @@ body {
 
 .square__testimonials {
 	width: 26.4rem;
-	height: 38.7rem;
+	max-height: 391px;
+	overflow: hidden;
+	overflow-y: scroll;
 	padding: 1.5rem;
 	border-radius: 15px;
 	background-color: rgba(241, 243, 242, 1);
@@ -1597,10 +1599,21 @@ body {
 		);
 }
 
+.square__testimonials:nth-child(3) {
+	display: none;
+}
+
 .testimonials__header {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 1rem;
+}
+
+.testimonials__header img{
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	
 }
 
 .header__right {
@@ -1678,7 +1691,8 @@ body {
 		justify-content: space-between;
 	}
 
-	.square__testimonials:first-child {
+	.square__testimonials:first-child,
+	.square__testimonials:nth-child(2) {
 		display: none;
 	}
 
@@ -1766,7 +1780,7 @@ body {
 	.square__testimonials:first-child {
 		display: block;
 	}
-	.last{
+	.three{
 		display: none;
 	}
 	.square__testimonials:nth-child(3){
