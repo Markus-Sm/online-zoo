@@ -49,17 +49,8 @@ const cards__wrapper = document.querySelector('.square__wrap_6');
 const cards__item = cards__wrapper.getElementsByClassName('square__testimonials')
 
 sliderRange.oninput = function(){
-    console.log(this.value);
 
-    if(this.value == 0){
-        cards__wrapper.append(cards__item[0]);
-    }else if(this.value == 1){
-        cards__wrapper.append(cards__item[0]);
-    }else if(this.value == 2){
-        cards__wrapper.append(cards__item[0]);
-    }else if(this.value == 3){
-        cards__wrapper.append(cards__item[0]);
-    }else if(this.value == 4){
+    for(let i = 0; i<= this.value; i++){
         cards__wrapper.append(cards__item[0]);
     }
 }
