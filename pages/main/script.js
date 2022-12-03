@@ -17,7 +17,9 @@ const closeModal = function(){
 burger.addEventListener('click', openModal);
 closeModalWindow.addEventListener('click', closeModal)
 
+/* ========================= */
 /* pets carousel */
+/* ========================= */
 
 var sliderMain = document.getElementById('slider-main');
 var item = sliderMain.getElementsByClassName('pet__card');
@@ -41,7 +43,9 @@ function prev(){
 arrowLeft.addEventListener("click", prev)
 arrowRight.addEventListener("click", next)
 
+/* ========================= */
 /* testimonials range slider */
+/* ========================= */
 
 const sliderRange = document.querySelector('.slider-progress');
 
@@ -50,9 +54,29 @@ const cards__item = cards__wrapper.getElementsByClassName('square__testimonials'
 
 sliderRange.oninput = function(){
 
-    for(let i = 0; i<= this.value; i++){
-        cards__wrapper.append(cards__item[0]);
+    // for(let i = 0; i <= this.value; i++){
+    //     cards__wrapper.append(cards__item[0]);
+    // }
+
+    if(this.value == 0){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 1){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 2){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 3){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 4){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 5){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 6){
+        cards__wrapper.append(cards__item[0])
+    }else if(this.value == 7){
+        cards__wrapper.append(cards__item[0])
     }
 }
 
-console.log("is good");
+/* ========================= */
+/* Popup Testimonials*/
+/* ========================= */

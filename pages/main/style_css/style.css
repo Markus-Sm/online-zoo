@@ -1599,7 +1599,9 @@ body {
 		);
 }
 
-.square__testimonials:nth-child(3) {
+.square__testimonials:nth-child(3),
+.square__testimonials:nth-child(4),
+.square__testimonials:nth-child(5) {
 	display: none;
 }
 
@@ -1692,7 +1694,7 @@ body {
 	}
 
 	.square__testimonials:first-child,
-	.square__testimonials:nth-child(2) {
+	.square__testimonials:nth-child(5) {
 		display: none;
 	}
 
@@ -1781,6 +1783,10 @@ body {
 		display: block;
 	}
 	.three{
+		display: none;
+	}
+
+	.last{
 		display: none;
 	}
 	.square__testimonials:nth-child(3){
