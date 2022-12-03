@@ -48,9 +48,4 @@ const sliderRange = document.querySelector('.slider-progress');
 const cards__wrapper = document.querySelector('.square__wrap_6');
 const cards__item = cards__wrapper.getElementsByClassName('square__testimonials')
 
-sliderRange.oninput = function(){
 
-    for(let i = 0; i<= this.value; i++){
-        cards__wrapper.append(cards__item[0]);
-    }
-}
