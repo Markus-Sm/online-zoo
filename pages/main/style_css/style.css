@@ -1599,7 +1599,9 @@ body {
 		);
 }
 
-.square__testimonials:nth-child(3) {
+.square__testimonials:nth-child(3),
+.square__testimonials:nth-child(4),
+.square__testimonials:nth-child(5) {
 	display: none;
 }
 
@@ -1678,6 +1680,11 @@ body {
 	right: 0rem;
 }
 
+.hidden {
+    display: none;
+	visibility: hidden;
+  }
+
 /*========MEDIA Testemonials=================*/
 
 @media (max-width: 1440px) {
@@ -1692,7 +1699,7 @@ body {
 	}
 
 	.square__testimonials:first-child,
-	.square__testimonials:nth-child(2) {
+	.square__testimonials:nth-child(5) {
 		display: none;
 	}
 
@@ -1731,6 +1738,9 @@ body {
 		overflow-y: scroll;
 		margin-top: 15px;
 	}
+	.square__testimonials:hover{
+		cursor: pointer;
+	}
 
 	.leav{
 		width: 8rem;
@@ -1741,6 +1751,79 @@ body {
 		margin-left: 15rem;
 		margin-bottom: 0;
 	}
+
+	/* -------------------------- */
+  /* CLASSES TO MAKE MODAL WORK */
+  .hidden {
+    display: none;
+	visibility: hidden;
+  }
+  
+  .modal {
+    position: fixed;
+	justify-content: center;
+	align-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+    width: 330px;
+	height: 448px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 6000;
+  }
+
+  .overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    background-color: rgba(119, 119, 119, 0.479);
+    backdrop-filter: blur(3px);
+    z-index: 5000;
+  }
+
+  .modals__card{
+	margin-top: 3rem;
+	width: 267px;
+	height: 391px;
+	overflow: hidden;
+	overflow-y: scroll;
+	padding: 1.5rem;
+	border-radius: 15px;
+	background-color: rgba(241, 243, 242, 1);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(254, 189, 171, 0.74);
+	-moz-box-shadow: 0px 0px 1px 3px rgba(254, 189, 171, 0.74);
+	box-shadow: 0px 0px 1px 3px
+			linear-gradient(
+				315.75deg,
+				rgba(254, 189, 171, 0.74) 30.06%,
+				rgba(243, 169, 248, 0.66) 50.74%,
+				#e0d8f0 80.49%,
+				#eaf7fe 127.9%,
+				#eaf7fe 149.54%
+			),
+		linear-gradient(
+			315.75deg,
+			rgba(254, 189, 171, 0.74) 30.06%,
+			rgba(243, 169, 248, 0.66) 50.74%,
+			#e0d8f0 80.49%,
+			#eaf7fe 127.9%,
+			#eaf7fe 149.54%
+		);
+  }
+
+  .modal-x{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+  }
 }
 
 @media (max-width: 639px){
@@ -1780,14 +1863,34 @@ body {
 	.square__testimonials:first-child {
 		display: block;
 	}
-	.three{
+	
+	.square__testimonials:nth-child(2){
 		display: none;
 	}
+
 	.square__testimonials:nth-child(3){
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
+
+	/* -------------------------- */
+  /* CLASSES TO MAKE MODAL WORK */  
+  .modal {
+    width: 320px;
+	height: 448px;
+  }
+
+  .modals__card{
+	width: 267px;
+	height: 391px;
+  }
+
+  .modal-x{
+	width: 14px;
+	height: 14px;
+  }
 }
+
 
 /*END OF SECTION 6 TESTIMONIALS*/
 
